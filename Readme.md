@@ -19,6 +19,8 @@ Hyperledger fabric developer network on few clicks. This offer is meant to provi
 **Notes**
 There were some issues deploying on AKS 1.22+. Hlf_complete_template.yaml has a variable for AKS version currently pointing to  1.21.7. 
 
+Thank you to Dasith Wijes, David Hawkins and Hitesh Dutt for their assistance 
+
 ============================
 
 This is an example how the same can be done in an automated way via an Azure DevOps Pipeline. The idea is to have two pipelines. One for deploying the infrastructure (Orderer, Peer and Consortium/Channel operation) and one for deploying the chaincode. We have a reusable template `HLF_complete_template.yaml` and a script `deployChaincode.sh` to facilitate this.
